@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MobiCloudLBS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="enterUsername">Username</string>
+    <string name="enterPassword">Password</string>
+	<string name="register">New user? sign-up here</string>
+	<string name="welcome">MobiCloud LBS</string>
+	<string name="home">This is the home screen</string>
+</resources>

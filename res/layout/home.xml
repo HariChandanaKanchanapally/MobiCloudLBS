@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="end"
+    android:background="#CCCCCC">
+	<TextView
+       	    android:id="@+id/userName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = "Hi User."
+    android:textSize = "35dp"
+    android:textStyle = "bold"
+        />
+    <ImageButton
+        android:id="@+id/uploadButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/upload"
+        android:gravity = "end" 
+    android:adjustViewBounds="true"
+         />
+    </LinearLayout>
+    
+        	<ListView
+    	android:layout_width="match_parent"
+    	android:layout_height="500dp"
+    	android:fastScrollEnabled="true"
+    	android:smoothScrollbar="true"
+    	android:id="@+id/listView"
+    	></ListView>
+        
+       	<TextView
+       	    android:id="@+id/location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = "NULL"
+        />
+        
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = "SERVER INFO:"
+        />
+    <TextView
+        android:id="@+id/srvrmsg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = "Server is not running"
+        />
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/srvrSocBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start Server" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/srvrMsgInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = ""
+        />
+    
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = "CLIENT INFO:"
+        />
+      <TextView
+        android:id="@+id/clientmsg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = ""
+        />
+    <EditText
+        android:id="@+id/srvrIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint = "server IP address">
+        <requestFocus />
+    </EditText>
+
+    
+    	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/clientSocBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start Client" />
+  </LinearLayout>
+    <TextView
+        android:id="@+id/clientMsgInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = ""
+        />
+
+     
+</LinearLayout>
+</ScrollView>
